@@ -74,6 +74,12 @@
                 "task": {"<-": "@taskList:iteration.object"}
             }
         },
+        "taskCell2": {
+            "prototype": "ui/task-cell.reel",
+            "properties": {
+                "element": {"#": "taskCell2"}
+            }
+        },
         "taskList": {
             "prototype": "digit/ui/list.reel",
             "properties": {
@@ -97,6 +103,7 @@
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
         <h1 data-montage-id="title"></h1>
+        <div data-montage-id="taskCell2"></div>
         <button data-montage-id="addTaskButton">
 
         </button>
